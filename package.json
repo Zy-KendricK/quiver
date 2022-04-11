@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start  -p $PORT",
+    "start": "next start",
     "lint": "next lint",
-    "heroku-postbuild": "npm run build",
     "build:tailwind": "tailwind build styles/index.css -o styles/output.css"
   },
   "respository": {
