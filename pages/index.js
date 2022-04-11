@@ -54,7 +54,7 @@ export default function Index() {
         </div>
         <Image
           className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-          src="/img/pattern_nextjs.png" width={50} height={50}
+          src="/img/pattern_nextjs.png" width={100} height={100}
           alt="..."
         />
       </section>
