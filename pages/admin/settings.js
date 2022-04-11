@@ -3,7 +3,7 @@ import React from "react";
 // components
 // layout for page
 import Admin from "layouts/Admin.js";
-import PersonalSettings from "components/Settings/personalSettings";
+import PersonalSettings from "components/Settings/PersonalSettings";
 import AccountSettings from "components/Settings/AccountSettings";
 
 export default function Settings() {
