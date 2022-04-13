@@ -15,7 +15,7 @@ export default function HeaderStats() {
           </div>
           <div>
             {/* Card stats */}
-            <div className="grid grid-cols-5 divide-x divide-green-300 bg-green-500 rounded-lg py-4 px">
+            <div className="flex-col md:grid md:grid-cols-5 md:divide-x mdb:divide-y divide-green-300 bg-green-500 rounded-lg py-4 px">
               <div className="py-4 text-white items-center">
                 <div className="text-center">
                   <p className="text-sm font-normal text-slate-300 group-hover:text-white">Total Users</p>
