@@ -43,13 +43,13 @@ export default function DashboardTable() {
                     <tbody>
                         <tr>
                             <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
-                                <span className={"font-bold text-blueGray-600 "}>Apr 01, 2022</span>
+                                <span className={"font-bold text-quivercolor "}>Apr 01, 2022</span>
                             </th>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                 debra.holt@example.com
                             </td>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <span className={"font-bold text-blueGray-600 "}>led_126TPzIrHFcM1QdkincnSr</span>
+                                <span className={"font-bold text-quivercolor "}>led_126TPzIrHFcM1QdkincnSr</span>
                             </td>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                 <i className="fas fa-circle text-blue-500 mr-2"></i> Normal
@@ -60,7 +60,7 @@ export default function DashboardTable() {
                                 </span>
                             </td>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <span className={"font-bold text-blueGray-600 "}>$500</span>
+                                <span className={"font-bold text-quivercolor "}>$500</span>
                             </td>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
                                 <TableDropdown />
@@ -68,7 +68,7 @@ export default function DashboardTable() {
                         </tr>
                         <tr>
                             <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
-                                <span className={"font-bold text-blueGray-600 "}>Apr 01, 2022</span>
+                                <span className={"font-bold text-quivercolor "}>Apr 01, 2022</span>
                             </th>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                 michael.mitc@example.com
@@ -85,7 +85,7 @@ export default function DashboardTable() {
                                 </span>
                             </td>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <span className={"font-bold text-blueGray-600 "}>$500</span>
+                                <span className={"font-bold text-quivercolor "}>$500</span>
                             </td>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
                                 <TableDropdown />
@@ -93,7 +93,7 @@ export default function DashboardTable() {
                         </tr>
                         <tr>
                             <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
-                                <span className={"font-bold text-blueGray-600 "}>Apr 01, 2022</span>
+                                <span className={"font-bold text-quivercolor "}>Apr 01, 2022</span>
                             </th>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                 felicia.reid@example.com
@@ -110,7 +110,7 @@ export default function DashboardTable() {
                                 </span>
                             </td>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                <span className={"font-bold text-blueGray-600 "}>$500</span>
+                                <span className={"font-bold text-quivercolor "}>$500</span>
                             </td>
                             <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
                                 <TableDropdown />

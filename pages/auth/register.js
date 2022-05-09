@@ -37,7 +37,7 @@ export default function Register() {
         <div className="flex flex-wrap items-center justify-between mb-6">
           <div className="w-full md:w-1/2">
             <label className="relative inline-flex items-center">
-              <input className="form-checkbox appearance-none rounded" type="checkbox" />
+              <input className="form-checkbox appearance-none rounded focus:ring-green-500 rounded text-green-500" type="checkbox" />
               {/* <Image className="absolute top-1/2 transform -translate-y-1/2 left-0" src="flex-ui-assets/elements/sign-up/checkbox-icon.svg" alt="" /> */}
               <span className="ml-7 text-xs text-coolGray-800 font-medium">Remember me</span>
             </label>

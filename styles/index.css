@@ -86,3 +86,57 @@ input::-webkit-file-upload-button:hover {
     right: 5px;
     transform: rotate(45deg);
 }
+
+/*---------------------------------
+// Custom Scrollbar
+ ---------------------------------*/
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f8f8;
+}
+
+::-webkit-scrollbar-thumb {
+    padding: 4px 2px;
+    background: #2f90c1;
+    border-radius: 0px;
+}
+
+
+/*---------------------------------
+// radio
+ ---------------------------------*/
+
+input[type="radio"]+label span {
+    transition: background .2s,
+        transform .2s;
+}
+
+fieldset {
+    overflow: hidden;
+    text-align: center;
+}
+
+fieldset:before,
+fieldset:after {
+    background-color: #e4e4e7;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+
+fieldset:before {
+    right: 0.5em;
+    margin-left: -100%;
+}
+
+fieldset:after {
+    left: 0.5em;
+    margin-right: -50%;
+    margin-top: 10px;
+}

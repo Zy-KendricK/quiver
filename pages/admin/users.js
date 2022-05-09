@@ -1,27 +1,29 @@
 import React from "react";
 
 // components
+import ActiveUsers from "components/Tables/ActiveUsers";
 // layout for page
 import Admin from "layouts/Admin.js";
-import PersonalSettings from "components/Settings/PersonalSettings";
-import AccountSettings from "components/Settings/AccountSettings";
+import AllUsers from "components/Tables/AllUsers";
+import InactiveUsers from "components/Tables/InactiveUsers";
 
-export default function Settings() {
+export default function Users() {
     const [openTab, setOpenTab] = React.useState(1);
+
     return (
         <>
-            <div className="px-4 md:px-10 md:pt-32 pt-12 mx-auto w-full">
+            <div className="md:pt-32 pt-12 mx-auto w-full">
                 <div className="flex flex-wrap">
-                    <div className="relative w-full max-w-full flex-grow flex-1 mb-2">
+                    <div className="px-4 md:px-10 relative w-full max-w-full flex-grow flex-1 mb-2">
                         <h2 className="text-blueGray-700 text-lg font-semibold">
-                            Settings
+                            Users
                         </h2>
                     </div>
                     <div className="w-full">
                         <div className="flex flex-wrap">
                             <div className="w-full">
                                 <ul
-                                    className="flex mb-0 list-none flex-wrap pt-3 flex-row border-b w-full "
+                                    className="px-4 md:px-10 flex mb-0 list-none flex-wrap pt-3 flex-row border-b w-full "
                                     role="tablist"
                                 >
                                     <li className="-mb-px mr-2">
@@ -29,7 +31,7 @@ export default function Settings() {
                                             className={
                                                 "text-md py-3 pr-5 rounded block leading-normal " +
                                                 (openTab === 1
-                                                    ? "border-b-4 border-green-600 font-semibold"
+                                                    ? "border-b-2 border-green-600 font-semibold"
                                                     : "text-quivercolor bg-white")
                                             }
                                             onClick={e => {
@@ -39,7 +41,7 @@ export default function Settings() {
                                             data-toggle="tab"
                                             href="#link1"
                                             role="tablist"
-                                        >Personal Settings
+                                        >All Users
                                         </a>
                                     </li>
                                     <li className="-mb-px mr-2">
@@ -47,7 +49,7 @@ export default function Settings() {
                                             className={
                                                 "text-md py-3 pr-5 rounded block leading-normal " +
                                                 (openTab === 2
-                                                    ? "border-b-4 border-green-600 font-semibold"
+                                                    ? "border-b-2 border-green-600 font-semibold"
                                                     : "text-quivercolor bg-white")
                                             }
                                             onClick={e => {
@@ -55,10 +57,29 @@ export default function Settings() {
                                                 setOpenTab(2);
                                             }}
                                             data-toggle="tab"
-                                            href="#link1"
+                                            href="#link2"
                                             role="tablist"
                                         >
-                                            Account Security
+                                            Active Users
+                                        </a>
+                                    </li>
+                                    <li className="-mb-px mr-2">
+                                        <a
+                                            className={
+                                                "text-md py-3 pr-5 rounded block leading-normal " +
+                                                (openTab === 3
+                                                    ? "border-b-2 border-green-600 font-semibold"
+                                                    : "text-quivercolor bg-white")
+                                            }
+                                            onClick={e => {
+                                                e.preventDefault();
+                                                setOpenTab(3);
+                                            }}
+                                            data-toggle="tab"
+                                            href="#link3"
+                                            role="tablist"
+                                        >
+                                            Inactive Users
                                         </a>
                                     </li>
                                 </ul>
@@ -66,10 +87,13 @@ export default function Settings() {
                                     <div className="px-4 py-5 flex-auto">
                                         <div className="tab-content tab-space">
                                             <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                                                <PersonalSettings />
+                                                <AllUsers />
                                             </div>
                                             <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                                                <AccountSettings />
+                                                <ActiveUsers />
+                                            </div>
+                                            <div className={openTab === 3 ? "block" : "hidden"} id="link3">
+                                                <InactiveUsers />
                                             </div>
                                         </div>
                                     </div>
@@ -83,4 +107,4 @@ export default function Settings() {
     );
 }
 
-Settings.layout = Admin;
+Users.layout = Admin;

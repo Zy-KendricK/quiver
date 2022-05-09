@@ -12,16 +12,19 @@ export default function CardBarChart() {
           "USDC",
           "USDP",
           "DAI",
+          "HUSD",
+          "GUSD",
+          "FEI"
         ],
         datasets: [
           {
             label: new Date().getFullYear(),
             backgroundColor: "#22c55e",
             borderColor: "#ed64a6",
-            borderRadius: 5,
-            data: [12, 6, 4, 6, 2],
+            borderRadius: 10,
+            data: [12, 9, 6, 4, 6, 2.1, 2.1, 2],
             fill: false,
-            barThickness: 80,
+            barThickness: 60,
           }
         ],
       },
@@ -35,10 +38,6 @@ export default function CardBarChart() {
         tooltips: {
           mode: "index",
           intersect: false,
-        },
-        hover: {
-          mode: "nearest",
-          intersect: true,
         },
         legend: {
           labels: {
@@ -92,7 +91,7 @@ export default function CardBarChart() {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 border rounded">
+      <div className="relative flex flex-col min-w-0 break-words bg-blueGray-100 w-full mb-6 border rounded">
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">

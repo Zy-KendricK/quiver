@@ -18,7 +18,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 1
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -37,7 +37,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 2
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -56,7 +56,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 3
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -75,7 +75,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 4
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -94,7 +94,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 5
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -113,7 +113,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 6
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -132,7 +132,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 7
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -151,7 +151,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 8
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -170,7 +170,7 @@ export default function CardTransactions() {
                   "text-xs font-bold uppercase px-5 py-3 rounded block leading-normal " +
                   (openTab === 9
                     ? "border-b-2 border-green-600"
-                    : "text-blueGray-600 bg-white")
+                    : "text-quivercolor bg-white")
                 }
                 onClick={e => {
                   e.preventDefault();

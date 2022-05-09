@@ -12,6 +12,10 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
+      'quivercolor': '#0E3641',
+    },
+    fontSize: {
+      '2xs': ['8px', '12px'],
     },
     screens: {
       'sm': '640px',
@@ -28,6 +32,9 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+
+      '2xlb': { 'max': '1535px' },
+      // => @media (max-width: 1536px) { ... }
 
       'mdb': { 'max': '767px' },
       // => @media (max-width: 767px) { ... }
@@ -72,6 +79,9 @@ module.exports = {
       },
       maxHeight: {
         "860-px": "860px",
+      },
+      width: {
+        '13': '3.25rem',
       },
       maxWidth: {
         "100-px": "100px",

@@ -23,8 +23,8 @@ export default function Sidebar() {
           {/* Brand */}
           <Link href="/">
             <a
-              href="#pablo"
-              className="md:block text-left md:pb-3 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm p-4 px-0 "
+              href="#"
+              className="md:block text-left md:pb-3 text-quivercolor mr-0 inline-block whitespace-nowrap text-sm p-4 px-0 "
             >
               <Image src="/img/logo.png" alt="quiverlogo" width={100} height={31} />
               <span className="relative inline-block float-right md:mt-2">
@@ -54,8 +54,8 @@ export default function Sidebar() {
                 <div className="w-6/12">
                   <Link href="/">
                     <a
-                      href="#pablo"
-                      className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm font-bold p-4 px-0"
+                      href="#"
+                      className="md:block text-left md:pb-2 text-quivercolor mr-0 inline-block whitespace-nowrap text-sm font-bold p-4 px-0"
                     >
                       <Image src="/img/logo.png" alt="quiverlogo" width={100} height={31} />
                     </a>
@@ -78,7 +78,7 @@ export default function Sidebar() {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="border-0 px-3 py-2 h-12 border border-solid  border-blueGray-500 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
+                  className="border-0 px-3 py-2 h-12 border border-solid  border-blueGray-500 placeholder-blueGray-300 text-quivercolor bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
                 />
               </div>
             </form>
@@ -103,7 +103,7 @@ export default function Sidebar() {
                 <Link href="/admin/dashboard">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -127,7 +127,7 @@ export default function Sidebar() {
                 <Link href="/admin/support">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -148,29 +148,6 @@ export default function Sidebar() {
             {/* Navigation */}
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg " +
-                (router.pathname.indexOf("/admin/payment") !== -1
-                  ? "bg-blueGray-100 hover:bg-blueGray-200"
-                  : "text-blueGray-700 hover:bg-blueGray-200")}>
-                <Image src='/icons/money-send.png' alt="support" width={16} height={16}
-                  className={(router.pathname.indexOf("/admin/payment") !== -1
-                    ? "opacity-75"
-                    : "text-blueGray-300")
-                  }
-                />
-                <Link href="/admin/payment">
-
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-base py-3 font-medium block md:pl-8 pl-4"
-                    }
-                  >
-
-                    Payment
-                  </a>
-                </Link>
-              </li>
 
               <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg " +
                 (router.pathname.indexOf("/admin/users") !== -1
@@ -185,7 +162,7 @@ export default function Sidebar() {
                 <Link href="/admin/users">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -208,7 +185,7 @@ export default function Sidebar() {
                 <Link href="/admin/currencies">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -231,7 +208,7 @@ export default function Sidebar() {
                 <Link href="/admin/loans">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -254,7 +231,7 @@ export default function Sidebar() {
                 <Link href="/admin/savings">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -274,10 +251,10 @@ export default function Sidebar() {
                     : "text-blueGray-300")
                   }
                 />
-                <Link href="/admin/savings">
+                <Link href="/admin/transactions">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -311,7 +288,7 @@ export default function Sidebar() {
                 <Link href="/admin/agents">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -335,7 +312,7 @@ export default function Sidebar() {
                 <Link href="/admin/roles">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -355,10 +332,10 @@ export default function Sidebar() {
                     : "text-blueGray-300")
                   }
                 />
-                <Link href="/admin/audit">
+                <Link href="/admin/activities">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       "text-base py-3 font-medium block md:pl-8 pl-4"
                     }
@@ -379,7 +356,7 @@ export default function Sidebar() {
             {/* Navigation */}
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg " +
+              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg justify-between  " +
                 (router.pathname.indexOf("/admin/urgent") !== -1
                   ? "bg-blueGray-100 hover:bg-blueGray-200"
                   : "text-blueGray-700 hover:bg-blueGray-200")}>
@@ -392,21 +369,21 @@ export default function Sidebar() {
                 <Link href="/admin/urgent">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
-                      "text-base py-3 font-medium block md:pl-8 pl-4"
+                      "text-base py-3 font-medium"
                     }
                   >
 
                     Urgent
                   </a>
                 </Link>
-                <span className="text-xs font-semibold ml-5 inline-block py-1 px-2 uppercase rounded text-blueGray-600 bg-blueGray-200 uppercase last:mr-0 mr-1">
+                <span className="text-xs font-semibold ml-5 inline-block py-1 px-2 rounded text-quivercolor bg-blueGray-200 uppercase last:mr-0 mr-1">
                   5
                 </span>
               </li>
 
-              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg " +
+              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg justify-between  " +
                 (router.pathname.indexOf("/admin/high") !== -1
                   ? "bg-blueGray-100 hover:bg-blueGray-200"
                   : "text-blueGray-700 hover:bg-blueGray-200")}>
@@ -419,21 +396,21 @@ export default function Sidebar() {
                 <Link href="/admin/high">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
-                      "text-base py-3 font-medium block md:pl-8 pl-4"
+                      "text-base py-3 font-medium"
                     }
                   >
 
                     High
                   </a>
                 </Link>
-                <span className="text-xs font-semibold ml-5 inline-block py-1 px-2 uppercase rounded text-blueGray-600 bg-blueGray-200 uppercase last:mr-0 mr-1">
+                <span className="text-xs font-semibold ml-5 inline-block py-1 px-2 rounded text-quivercolor bg-blueGray-200 uppercase last:mr-0 mr-1">
                   1
                 </span>
               </li>
 
-              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg " +
+              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg justify-between  " +
                 (router.pathname.indexOf("/admin/normal") !== -1
                   ? "bg-blueGray-100 hover:bg-blueGray-200"
                   : "text-blueGray-700 hover:bg-blueGray-200")}>
@@ -446,21 +423,21 @@ export default function Sidebar() {
                 <Link href="/admin/normal">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
-                      "text-base py-3 font-medium block md:pl-8 pl-4"
+                      "text-base py-3 font-medium"
                     }
                   >
 
                     Normal
                   </a>
                 </Link>
-                <span className="text-xs font-semibold l-0 inline-block py-1 px-2 uppercase rounded text-blueGray-600 bg-blueGray-200 uppercase last:mr-0 mr-1">
+                <span className="text-xs font-semibold l-0 inline-block py-1 px-2 rounded text-quivercolor bg-blueGray-200 uppercase last:mr-0 mr-1">
                   12
                 </span>
               </li>
 
-              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg " +
+              <li className={"items-center flex hover:bg-blueGray-200 px-3 rounded-lg justify-between " +
                 (router.pathname.indexOf("/admin/low") !== -1
                   ? "bg-blueGray-100 hover:bg-blueGray-200"
                   : "text-blueGray-700 hover:bg-blueGray-200")}>
@@ -473,22 +450,33 @@ export default function Sidebar() {
                 <Link href="/admin/low">
 
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
-                      "text-base py-3 font-medium block md:pl-8 pl-4"
+                      "text-base py-3 font-medium"
                     }
                   >
 
                     Low
                   </a>
                 </Link>
-                <span className="text-xs font-semibold ml-5 inline-block py-1 px-2 uppercase rounded text-blueGray-600 bg-blueGray-200 uppercase last:mr-0 mr-1">
+                <span className="text-xs text-right font-semibold ml-5 inline-block py-1 px-2 rounded text-quivercolor bg-blueGray-200 uppercase last:mr-0 mr-1">
                   6
                 </span>
               </li>
             </ul>
 
           </div>
+          <Link href="/admin/push_notifications" className="cursor-pointer">
+            <div className="flex items-center bg-green-500 rounded-lg p-2 cursor-pointer">
+              <div className="rounded-full bg-green-600 text-white w-12 h-12 uppercase font-semibold text-lg place-self-center text-center inline-block py-2 px-2">
+                <span><i className="fas fa-comment-alt text-white mt-2"></i></span>
+              </div>
+              <div className="flex flex-col text-white ml-2">
+                <strong>Send Message</strong>
+                <span className="text-2xs">Send flash message to all users</span>
+              </div>
+            </div>
+          </Link>
         </div>
       </nav>
     </>

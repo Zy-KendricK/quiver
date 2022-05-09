@@ -13,14 +13,14 @@ export default function Index() {
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <Image src="/img/logo.png" alt="quiverlogo" width={200} height={80} />
-              <h2 className="font-semibold text-4xl text-blueGray-600">
+              <h2 className="font-semibold text-4xl text-quivercolor">
                 Quiver Console - Admin to manage the Quiver mobile app.
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
                 Welcome User, On this platform you would be able to manage users, view transactions, app authorizations and also obtaining data as being used on out mobile quiver application.
                 <a
                   href="https://tailwindcss.com/?ref=creativetim"
-                  className="text-blueGray-600"
+                  className="text-quivercolor"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

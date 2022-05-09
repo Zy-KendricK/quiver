@@ -1,9 +1,8 @@
 import React from "react";
 import { createPopper } from "@popperjs/core";
-import UserDetails from "components/Users/UserDetails";
 import Image from 'next/image'
 
-const NotificationDropdown = () => {
+const LoansDropdown = () => {
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();
@@ -17,6 +16,8 @@ const NotificationDropdown = () => {
   const closeDropdownPopover = () => {
     setDropdownPopoverShow(false);
   };
+
+  const isBrowser = typeof window !== "undefined";
 
   const [showModal, setShowModal] = React.useState(false);
   return (
@@ -74,7 +75,7 @@ const NotificationDropdown = () => {
             <div className="relative w-auto mx-auto max-w-md whitespace-pre-line scroll-smooth overflow-auto">
               {/*content*/}
               <div className="border-0 shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="flex items-start justify-between p-5 rounded-t">
+                <div className="flex items-start justify-between 2xl:p-5 p-2 rounded-t">
                   {/* <h3 className="text-3xl font-semibold">
                     Modal Title
                   </h3> */}
@@ -87,92 +88,90 @@ const NotificationDropdown = () => {
                     </span>
                   </button>
                 </div>
-                <div className="relative p-6 flex-auto text-center">
+                <div className="relative px-6 flex-auto text-center h-screen">
                   <Image className="object-cover object-center h-32 rounded-full" src="/img/team-3-800x800.jpg" width={100} height={100} alt='Woman looking front' />
-                  <div className="text-center my-2 border-b">
-                    <h2 className="font-semibold py-2">$philipM</h2>
-                    <p className="py-2">philip.masoan@example.com</p>
-                    <p className="py-2">Last seen active <span className="text-blueGray-400"><i className="fas fa-square mx-2"></i>2mins. ago</span></p>
+                  <div className="text-center my-2">
+                    <h2 className="font-semibold py-1">$philipM</h2>
+                    <p className="py-1">philip.masoan@example.com</p>
+                    <p className="py-1">Last seen active <span className="text-blueGray-400"><i className="fas fa-square mx-2"></i>2mins. ago</span></p>
                   </div>
-                  <div className="flex-col md:grid md:grid-cols-3 md:divide-x mdb:divide-y divide-green-300 bg-green-500 rounded-lg py-4 px border-t">
-                    <div className="p-4  text-white items-center">
+                  <div className="flex-col md:grid md:grid-cols-2 border rounded-lg 2xl:py-4 px">
+                    <div className="2xl:p-4 p-2 2xlb:py-3 items-center">
                       <div className="text-left tracking-wide">
-                        <p className="text-xs font-normal text-slate-300 group-hover:text-white">Flat Balance</p>
-                        <p className="text-xl font-medium text-slate-500 group-hover:text-slate-300">$2,923.41</p>
+                        <p className="text-xs font-normal text-slate-300 ">Loan Amount</p>
+                        <p className="text-xl font-medium text-green-500">1,500 BUSD</p>
                       </div>
                     </div>
-                    <div className="p-4 text-white items-center">
+                    <div className="2xl:p-4 p-2 2xlb:py-3 items-center">
                       <div className="text-left tracking-wide">
-                        <p className="text-xs font-normal text-slate-300 group-hover:text-white">Total QPs</p>
-                        <p className="text-xl font-medium text-slate-500 group-hover:text-slate-300"><i className="fas fa-star text-white mr-1"></i>1,287</p>
-                      </div>
-                    </div>
-                    <div className="p-4 text-white items-center">
-                      <div className="text-left tracking-wide">
-                        <p className="text-xs font-normal text-slate-300 group-hover:text-white">Loans</p>
-                        <p className="text-xl font-medium text-slate-500 group-hover:text-slate-300">-$1500</p>
+                        <p className="text-xs font-normal text-slate-300 ">Collateral</p>
+                        <p className="text-xl font-medium text-slate-500">0.0781 BTC<span className="text-xs">≈ $1,800</span></p>
                       </div>
                     </div>
                   </div>
-                  <div className="py-4 mt-2">
+                  <div className="flex-col md:grid md:grid-cols-1 border rounded-lg 2xl:py-4 mt-4 px">
+                    <div className="2xl:p-4 p-2 2xlb:py-3 items-center ">
+                      <div className="text-center  tracking-wide">
+                        <p className="text-xs font-normal text-slate-300 ">Total Amount to payback</p>
+                        <p className="text-xl font-medium text-green-500">$1,634.28</p>
+                        <p className="text-xs font-normal text-slate-500">(Amount Borrowed + Interest)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="2xl:py-6 py-4 mt-2">
                     <table className="items-center w-full bg-transparent border-collapse">
                       <tbody>
                         <tr className="border-b">
                           <th className="align-middle text-xs whitespace-nowrap p-4 text-left flex items-center">
-                            <span className={"text-blueGray-400 font-light"}>Referred by</span>
+                            <span className={"text-blueGray-400 font-light"}>Request Date</span>
                           </th>
-                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right text-quivercolor">
-                            $wilson
+                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right font-bold">
+                            Apr 02, 2023
                           </td>
                         </tr>
                         <tr className="border-b">
                           <th className="align-middle text-xs whitespace-nowrap p-4 text-left flex items-center">
-                            <span className={"text-blueGray-400 font-light"}>NO. of Referrals</span>
+                            <span className={"text-blueGray-400 font-light"}>Due Date</span>
                           </th>
-                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right text-quivercolor">
-                            1
+                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right text-quivercolor font-bold">
+                            Apr 02, 2023
                           </td>
                         </tr>
                         <tr className="border-b">
                           <th className="align-middle text-xs whitespace-nowrap p-4 text-left flex items-center">
-                            <span className={"text-blueGray-400 font-light"}>KYC Level</span>
+                            <span className={"text-blueGray-400 font-light"}>Transaction ID</span>
                           </th>
-                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right">
-                            <span className={"font-semibold text-green-400"}
-                            // className={"font-semibold " + (
-                            //     tableProps.row.original.status == "Completed" ? "text-green-400" :
-                            //         tableProps.row.original.status == "KYC Level 1" ? "text-gray-400" :
-                            //             tableProps.row.original.status == "KYC Level 2" ? "text-indigo-400" : "text-red-400")}
-                            >
-                              Completed
-                            </span>
+                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right font-bold">
+                            led_126TPzIrHFcM1QdkincnSr
                           </td>
                         </tr>
                         <tr className="border-b">
                           <th className="align-middle text-xs whitespace-nowrap p-4 text-left flex items-center">
-                            <span className={"text-blueGray-400 font-light"}>Joined</span>
+                            <span className={"text-blueGray-400 font-light"}>Liquidation at</span>
                           </th>
-                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right">
-                            Apr 01, 2022
+                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right font-bold">
+                            $40,410.19
+                          </td>
+                        </tr>
+                        <tr className="border-b">
+                          <th className="align-middle text-xs whitespace-nowrap p-4 text-left flex items-center">
+                            <span className={"text-blueGray-400 font-light"}>BTC Margin Call at</span>
+                          </th>
+                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right font-bold">
+                            $44,823.09
+                          </td>
+                        </tr>
+                        <tr>
+                          <th className="align-middle text-xs whitespace-nowrap p-4 text-left flex items-center">
+                            <span className={"text-blueGray-400 font-light"}>Interest Rate</span>
+                          </th>
+                          <td className="align-middle text-xs whitespace-nowrap p-4 text-right font-bold">
+                            0.18%
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  <div className="mt-2 text-left">
-                    <div className="mb-1 pt-0">
-                      <label className="text-xs font-bold text-quivercolor pb-1">Send a message</label>
-                      <textarea type="text" className="bg-blueGray-100 text-blueGray-600 relative border border-blueGray-00 rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" rows="4"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-center p-6 border-t border-solid border-blueGray-200 rounded-b">
-                  <button
-                    className="bg-green-500 text-white active:bg-green-600 font-bold w-full text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  ><i className="far fa-comment-alt-lines"></i>Send a message
-                  </button>
                 </div>
               </div>
             </div>
@@ -184,4 +183,4 @@ const NotificationDropdown = () => {
   );
 };
 
-export default NotificationDropdown;
+export default LoansDropdown;
